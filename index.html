@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HumbleGang — Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f1218;
+      --surface: #171c26;
+      --border: #2a3344;
+      --text: #e8ecf4;
+      --muted: #9aa6b8;
+      --accent: #7dd3c0;
+      --accent-soft: rgba(125, 211, 192, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: radial-gradient(circle at top right, #1a2436 0%, var(--bg) 45%);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 5rem;
+    }
+
+    header {
+      margin-bottom: 3rem;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 3.4rem);
+      font-weight: 650;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .role {
+      margin-top: 0.7rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.6rem 1.7rem;
+      margin-bottom: 1.25rem;
+    }
+
+    h2 {
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.85rem;
+    }
+
+    .bio p {
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .skills {
+      list-style: none;
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .skills li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.9rem;
+      padding: 0.9rem 1rem;
+      background: var(--accent-soft);
+      border: 1px solid transparent;
+      border-radius: 12px;
+    }
+
+    .skill-mark {
+      color: var(--accent);
+      font-weight: 700;
+      margin-top: 0.1rem;
+    }
+
+    .skill-name {
+      display: block;
+      font-weight: 600;
+    }
+
+    .skill-note {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="eyebrow">Portfolio</p>
+      <h1>HumbleGang</h1>
+      <p class="role">Frontend developer &amp; product designer</p>
+    </header>
+
+    <section class="bio" aria-labelledby="bio-heading">
+      <h2 id="bio-heading">About</h2>
+      <p>
+        I build calm, useful interfaces with a focus on clarity and craft.
+        I like turning messy ideas into simple layouts people can actually use.
+      </p>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="skills">
+        <li>
+          <span class="skill-mark" aria-hidden="true">01</span>
+          <span>
+            <span class="skill-name">HTML &amp; CSS</span>
+            <span class="skill-note">Semantic markup and modern layout</span>
+          </span>
+        </li>
+        <li>
+          <span class="skill-mark" aria-hidden="true">02</span>
+          <span>
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-note">Interactive UI and DOM work</span>
+          </span>
+        </li>
+        <li>
+          <span class="skill-mark" aria-hidden="true">03</span>
+          <span>
+            <span class="skill-name">Responsive design</span>
+            <span class="skill-note">Layouts that hold up on any screen</span>
+          </span>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
